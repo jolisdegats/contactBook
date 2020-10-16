@@ -1,0 +1,101 @@
+.contactListMain {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  .usersList {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100rem;
+    @include small {
+      flex-direction: column;
+    }
+
+    .userCardBlock {
+      flex: 0 0 calc(100% / 3);
+      max-width: calc(100% / 3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 13rem;
+      box-sizing: border-box;
+
+      @include medium {
+        flex: 0 0 calc(100% / 2);
+        max-width: calc(100% / 2);
+      }
+      @include small {
+        flex: 1;
+        max-width: 100%;
+        margin-bottom: 1rem;
+      }
+
+      .userCard {
+        height: 80%;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2.5rem;
+        border: solid 0.2rem #f6f7fb;
+        position: relative;
+        cursor: pointer;
+
+        &:before {
+          content: " ";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          box-shadow: 0 0.2rem 1rem 0.2rem rgba(0, 0, 0, 0.2);
+          opacity: 0;
+          transition: opacity 500ms;
+        }
+
+        &:hover::before {
+          opacity: 0.4;
+        }
+
+        .picAndName {
+          display: flex;
+          align-items: center;
+          padding-right: 2rem;
+
+          .profilePicCard {
+            height: 5rem;
+            background-color: black;
+            border-radius: 50%;
+            margin-right: 2rem;
+          }
+          h2 {
+            font-size: 1.8rem;
+            margin: 0.5rem 0;
+            font-weight: 500;
+            line-height: 1.8rem;
+          }
+
+          p {
+            font-size: 1.5rem;
+            color: #c7cad4;
+            margin: 0.5rem 0 0 0;
+            line-height: 1.5rem;
+          }
+        }
+        .seeMore {
+          background-color: #f6f7fb;
+          color: #c7cad4;
+          border-radius: 50%;
+          transform: rotate(90deg);
+          height: 3rem;
+          width: 3rem;
+          padding-top: 0.2rem;
+          font-size: 1.2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,577 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+.leftColumn div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.leftColumn div .profilePicUser {
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  border: solid 0.5rem white;
+}
+
+.leftColumn div .leftColumnText {
+  padding: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.leftColumn div .leftColumnText h2 {
+  font-size: 2.8rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.leftColumn div .leftColumnText p {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 1.4rem;
+  color: white;
+}
+
+.leftColumn .madeWith {
+  color: white;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 1.2rem;
+}
+
+.leftColumn .madeWith .githubLink {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.loaderWrapper {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loaderWrapper .outer-ring {
+  position: absolute;
+  height: 18rem;
+  width: 18rem;
+  background-image: linear-gradient(135deg, #2fe3fe 0%, #4a00e0 33%, #8e2de2 66%, #ed00aa 100%);
+  border-radius: 50%;
+  /*  Rotate  */
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.loaderWrapper .inner-ring {
+  position: absolute;
+  height: 15rem;
+  width: 15rem;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#fff));
+  background-image: linear-gradient(0deg, #fff, #fff);
+  border-radius: 50%;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.uniqueUserMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3rem;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+}
+
+.uniqueUserMain .backButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #6e6d7a;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+
+.uniqueUserMain .backButton img {
+  height: 1.5rem;
+  margin-right: 1rem;
+  -webkit-filter: invert(45%) sepia(5%) saturate(879%) hue-rotate(205deg) brightness(92%) contrast(83%);
+          filter: invert(45%) sepia(5%) saturate(879%) hue-rotate(205deg) brightness(92%) contrast(83%);
+}
+
+.uniqueUserMain .backButton:hover {
+  -webkit-transform: translate(-5px, 0);
+          transform: translate(-5px, 0);
+}
+
+.uniqueUserMain .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  margin-right: 3rem;
+}
+
+@media (max-width: 912px) {
+  .uniqueUserMain .profile {
+    margin: 4rem 0;
+  }
+}
+
+.uniqueUserMain .profile img {
+  height: 25rem;
+}
+
+.uniqueUserMain .profile .profileText {
+  width: 70%;
+  max-width: 60rem;
+}
+
+@media (max-width: 912px) {
+  .uniqueUserMain .profile .profileText {
+    width: unset;
+  }
+}
+
+.uniqueUserMain .profile .profileText .profileName {
+  text-align: center;
+  color: white;
+  background: #4a00e0;
+  background: linear-gradient(-45deg, #4a00e0, #8e2de2);
+  padding: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.uniqueUserMain .profile .profileText .profileInfos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f6f7fb;
+  border-radius: 0 0 1rem 1rem;
+  -webkit-box-shadow: 0 0.2rem 1rem 0.2rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.2rem 1rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 912px) {
+  .uniqueUserMain .profile .profileText .profileInfos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem 2rem;
+  }
+}
+
+.uniqueUserMain .profile .profileText .profileInfos > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 1rem 2rem;
+}
+
+@media (max-width: 912px) {
+  .uniqueUserMain .profile .profileText .profileInfos > div {
+    padding: 0;
+  }
+}
+
+.uniqueUserMain .profile .profileText .profileInfos > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+}
+
+.uniqueUserMain .profile .profileText .profileInfos > div > div:not(:last-child) {
+  border-bottom: solid 1px #c7cad4;
+}
+
+.uniqueUserMain .profile .profileText .profileInfos > div > div p:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.uniqueUserMain .profile .profileText .profileInfos > div > div p:first-child img {
+  height: 2rem;
+  -webkit-filter: invert(45%) sepia(5%) saturate(879%) hue-rotate(205deg) brightness(92%) contrast(83%);
+          filter: invert(45%) sepia(5%) saturate(879%) hue-rotate(205deg) brightness(92%) contrast(83%);
+}
+
+.uniqueUserMain .profile .profileText .profileInfos > div > div p:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 2rem;
+  color: #6e6d7a;
+}
+
+.uniqueUserMain .profile .profileText .profileInfos > div > div p:last-child .companyName {
+  font-weight: bold;
+}
+
+.uniqueUserMain .profile .profileText .profileInfos > div > div p:last-child .baseline {
+  font-style: italic;
+}
+
+.uniqueUserMain .profile .profileText .profileInfos > div > div p:last-child .baseline:before, .uniqueUserMain .profile .profileText .profileInfos > div > div p:last-child .baseline:after {
+  content: '"';
+}
+
+@media (max-width: 912px) {
+  .uniqueUserMain .profile .profileText .profileInfos > div:first-child {
+    border-bottom: solid 1px #c7cad4;
+  }
+}
+
+.contactListMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3rem;
+}
+
+.contactListMain .usersList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 100rem;
+}
+
+@media (max-width: 600px) {
+  .contactListMain .usersList {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.contactListMain .usersList .userCardBlock {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% / 3);
+          flex: 0 0 calc(100% / 3);
+  max-width: calc(100% / 3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 13rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (max-width: 912px) {
+  .contactListMain .usersList .userCardBlock {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(100% / 2);
+            flex: 0 0 calc(100% / 2);
+    max-width: calc(100% / 2);
+  }
+}
+
+@media (max-width: 600px) {
+  .contactListMain .usersList .userCardBlock {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+.contactListMain .usersList .userCardBlock .userCard {
+  height: 80%;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 2.5rem;
+  border: solid 0.2rem #f6f7fb;
+  position: relative;
+  cursor: pointer;
+}
+
+.contactListMain .usersList .userCardBlock .userCard:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-box-shadow: 0 0.2rem 1rem 0.2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.2rem 1rem 0.2rem rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+.contactListMain .usersList .userCardBlock .userCard:hover::before {
+  opacity: 0.4;
+}
+
+.contactListMain .usersList .userCardBlock .userCard .picAndName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 2rem;
+}
+
+.contactListMain .usersList .userCardBlock .userCard .picAndName .profilePicCard {
+  height: 5rem;
+  background-color: black;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+
+.contactListMain .usersList .userCardBlock .userCard .picAndName h2 {
+  font-size: 1.8rem;
+  margin: 0.5rem 0;
+  font-weight: 500;
+  line-height: 1.8rem;
+}
+
+.contactListMain .usersList .userCardBlock .userCard .picAndName p {
+  font-size: 1.5rem;
+  color: #c7cad4;
+  margin: 0.5rem 0 0 0;
+  line-height: 1.5rem;
+}
+
+.contactListMain .usersList .userCardBlock .userCard .seeMore {
+  background-color: #f6f7fb;
+  color: #c7cad4;
+  border-radius: 50%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  height: 3rem;
+  width: 3rem;
+  padding-top: 0.2rem;
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
+
+@media (max-width: 1200px) {
+  .app {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.app h1,
+.app h2 {
+  font-family: "Oswald", sans-serif;
+  line-height: 1.8rem;
+}
+
+.app .leftColumn {
+  background: #4a00e0;
+  background: linear-gradient(-45deg, #4a00e0, #8e2de2);
+  background-size: 200% 200%;
+  -webkit-animation: gradient 10s ease infinite;
+          animation: gradient 10s ease infinite;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10rem 0 5rem 0;
+}
+
+.app .rightColumn {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5rem;
+}
+
+.app .rightColumn h1 {
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
+}
+
+.app .rightColumn p {
+  font-size: 1.5rem;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 5%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 5%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 5%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 5%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

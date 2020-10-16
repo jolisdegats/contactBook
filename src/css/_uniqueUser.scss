@@ -1,0 +1,116 @@
+.uniqueUserMain {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+
+  .backButton {
+    display: flex;
+    align-items: center;
+    color: $color-darkGrey;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+    img {
+      height: 1.5rem;
+      margin-right: 1rem;
+      filter: $filter-darkGrey;
+    }
+    &:hover {
+      transform: translate(-5px, 0);
+    }
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-right: 3rem;
+    @include medium {
+      margin: 4rem 0;
+    }
+
+    img {
+      height: 25rem;
+    }
+    .profileText {
+      width: 70%;
+      max-width: 60rem;
+      @include medium {
+        width: unset;
+      }
+
+      .profileName {
+        text-align: center;
+        color: white;
+        background: $color-backgroundOne;
+        background: $gradient-background;
+        padding: 1.5rem;
+        font-size: 2rem;
+        font-weight: bold;
+        border-radius: 1rem 1rem 0 0;
+      }
+      .profileInfos {
+        display: flex;
+        background-color: $color-lightGrey;
+        border-radius: 0 0 1rem 1rem;
+        box-shadow: 0 0.2rem 1rem 0.2rem rgba(0, 0, 0, 0.1);
+        @include medium {
+          flex-direction: column;
+          padding: 1rem 2rem;
+        }
+
+        > div {
+          flex: 1;
+          padding: 1rem 2rem;
+          @include medium {
+            padding: 0;
+          }
+          > div {
+            display: flex;
+
+            padding: 1rem;
+            &:not(:last-child) {
+              border-bottom: solid 1px $color-mediumGrey;
+            }
+
+            p:first-child {
+              display: flex;
+              justify-content: center;
+              img {
+                height: 2rem;
+                filter: $filter-darkGrey;
+              }
+            }
+            p:last-child {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              flex: 1;
+              margin-left: 2rem;
+              color: $color-darkGrey;
+              .companyName {
+                font-weight: bold;
+              }
+              .baseline {
+                font-style: italic;
+                &:before,
+                &:after {
+                  content: '"';
+                }
+              }
+            }
+          }
+          @include medium {
+            &:first-child {
+              border-bottom: solid 1px $color-mediumGrey;
+            }
+          }
+        }
+      }
+    }
+  }
+}

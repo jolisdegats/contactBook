@@ -1,0 +1,45 @@
+.leftColumn {
+  div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .profilePicUser {
+      height: 12rem;
+      width: 12rem;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center;
+      border: solid 0.5rem white;
+    }
+
+    .leftColumnText {
+      padding: 5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h2 {
+        font-size: 2.8rem;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+        margin-top: 4rem;
+        font-size: 1.4rem;
+        color: white;
+      }
+    }
+  }
+  .madeWith {
+    color: white;
+    flex-direction: row;
+    font-size: 1.2rem;
+    .githubLink {
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+}

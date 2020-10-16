@@ -1,68 +1,36 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+<a href="https://contactbook-jolisdegats.netlify.app/ ">
+  <img src="https://res.cloudinary.com/dqp905mfv/image/upload/v1602868660/portfolio/ReadMe/contactbook_fz2nja.jpg" alt ="Trainline - Banner"  />
+  </a>
+</p>
+<br/>
+<br/>
+<h1>Contact book (React)</h1>
+<br/>
+<p>Two-days project and first time with Redux and Redux Saga. I used the <a href="https://jsonplaceholder.typicode.com/">JSONplaceholder api</a> to get some fake data.
+The demo of the project is currently hosted on Netlify (frontend). Have a look at it and feel free to give some feedback. </p>
 
-## Available Scripts
+<h3>
+<a href="https://contactbook-jolisdegats.netlify.app/">Live Demo</a>
+</h3>
+  <br/>
+    <br/>
+<h2>Stack</h2>
 
-In the project directory, you can run:
+<p>Made with the following stack:<br/>
+Frontend : React, axios, react-redux, react-router-dom, redux, redux-devtools-extension, redux-saga, SASS</p>
+ <br/>
 
-### `yarn start`
+<h2>Install</h2>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<p>Just run `yarn` in your console to install all dependencies and `yarn start` to launch. Local demo should open on http://localhost:3000.</p>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<br/>
+<h2>Contact</h2>
+<p>💼 Find me on <a href="https://www.linkedin.com/in/julieszwarc/">LinkedIn</a></p>
 
-### `yarn test`
+<p>🦄 Stop by my <a href="https://julieszwarc.com">portfolio</a></p>
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<p>👩🏼‍💻 Take a look at my <a href="https://github.com/jolisdegats">GitHub</a></p>
+<br/>
+<br/>

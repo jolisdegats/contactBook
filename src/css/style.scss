@@ -1,0 +1,117 @@
+// VARIABLES
+$color-lightGrey: #f6f7fb;
+$color-mediumGrey: #c7cad4;
+$color-darkGrey: #6e6d7a;
+$color-backgroundOne: #4a00e0;
+$color-backgroundTwo: #8e2de2;
+$gradient-background: linear-gradient(
+  -45deg,
+  $color-backgroundOne,
+  $color-backgroundTwo
+);
+
+$filter-darkGrey: invert(45%) sepia(5%) saturate(879%) hue-rotate(205deg)
+  brightness(92%) contrast(83%);
+
+// Screen steps for responsive
+$screen-small: 600px;
+$screen-medium: 912px;
+$screen-normal: 1200px;
+$screen-large: 1242px;
+
+// RESPONSIVE MIXIN FUNCTIONS
+
+@mixin small {
+  @media (max-width: #{$screen-small}) {
+    @content;
+  }
+}
+@mixin medium {
+  @media (max-width: #{$screen-medium}) {
+    @content;
+  }
+}
+@mixin normal {
+  @media (max-width: #{$screen-normal}) {
+    @content;
+  }
+}
+@mixin large {
+  @media (max-width: #{$screen-large}) {
+    @content;
+  }
+}
+
+// IMPORTS
+@import "./leftColumn";
+@import "./loader";
+@import "./uniqueUser";
+@import "./usersList";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+// GENERAL CSS
+
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+  @include normal {
+    flex-direction: column;
+  }
+
+  h1,
+  h2 {
+    font-family: "Oswald", sans-serif;
+    line-height: 1.8rem;
+  }
+
+  .leftColumn {
+    background: $color-backgroundOne;
+    background: $gradient-background;
+    background-size: 200% 200%;
+    animation: gradient 10s ease infinite;
+
+    flex: 0 0 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10rem 0 5rem 0;
+  }
+
+  .rightColumn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+    h1 {
+      font-size: 2.6rem;
+      margin-bottom: 2rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 5%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 5%;
+  }
+}
