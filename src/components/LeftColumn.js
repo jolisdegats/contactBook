@@ -1,12 +1,18 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import profilePicUser from "../img/profilePicUser.jpg";
 
 const LeftColumn = () => {
+  const history = useHistory();
   return (
     <div className="leftColumn">
       <div>
         <div
-          style={{ backgroundImage: `url(${profilePicUser})` }}
+          onClick={() => history.push("/")}
+          style={{
+            backgroundImage: `url(${profilePicUser})`,
+            cursor: "pointer",
+          }}
           className="profilePicUser"
         />
         <div className="leftColumnText">
