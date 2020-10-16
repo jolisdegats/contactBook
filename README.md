@@ -1,6 +1,6 @@
 <p align="center">
 <a href="https://contactbook-jolisdegats.netlify.app/ ">
-  <img src="https://res.cloudinary.com/dqp905mfv/image/upload/v1602868660/portfolio/ReadMe/contactbook_fz2nja.jpg" alt ="Trainline - Banner"  />
+  <img src="https://res.cloudinary.com/dqp905mfv/image/upload/v1602868660/portfolio/ReadMe/contactbook_fz2nja.jpg" alt ="Contact Book - Banner"  />
   </a>
 </p>
 <br/>
